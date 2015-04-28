@@ -1,0 +1,261 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 9]><html class="ie"><![endif]-->
+<!--[if !IE]><html><![endif]-->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Cuthy Portfolio</title>
+
+	<!-- Viewport meta tag to prevent iPhone from scaling page -->
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+	<link rel="stylesheet" href="./css/style.css"/>
+
+	<!-- Normalize hide address bar for iOS and Android -->
+	<script src="./js/hideaddressbar.js"></script>
+
+	<!-- Add media query support for IE8 and under. Must place media queries in external stylesheet -->
+	<script src="./js/respond.min.js"></script>
+
+
+<!--[if lt IE 9]>
+<script src="./js/html5.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+<![endif]-->
+
+<!--[if IE 8]>
+<script src="./js/checkbox.js"></script>
+<![endif]-->
+
+
+</head>
+<body lang="en">
+	<div class="pagewrapper">
+
+		<div id="container-nav">
+			<section id="topnav" class="group wrapper">
+				<h3><b>Ingrid Cuthbert</b></h3>
+				<!-- Checkbox Hack markup -->
+				<input type="checkbox" id="toggle" />
+				<label for="toggle" onclick>Menu</label>
+				<!-- /Checkbox Hack markup -->
+				<nav>
+					<ul>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#resume">Resume</a></li>
+						<li><a href="#contact" id="lastli">Contact</a></li>
+					</ul>
+				</nav>
+				
+			</section>
+		</div>
+
+		<div id="container-header">
+			<header id="masthead" class="wrapper">
+				<div class='logowrap'>
+				  <a href="#" id='logo' class="logo" alt="logo" title="logo">
+				    <img src="./img/logo.svg">
+				    <span class="shadow"></span>
+				  </a>
+				</div>
+				<h1>Hello, I am awesome</h1>
+				<p id="weeintrotype"><small>in my passion for all things webby.</small></p>
+				<h2>My name is Ingrid, a Seattle-based web designer and junior frontend developer.</h2>
+			</header>
+		</div>
+
+		<article id="content">
+			<hr class="divider">
+
+			<section id="portfolio" class="group">
+
+				<header class="wrapper">
+					<h3>Portfolio</h3>
+				</header>
+
+				<article class="group wrapper">
+					<a href="">
+						<figure>
+							<img src="./img/Mijas-l.jpg" alt="Vacation Home Website">
+						</figure>
+					</a>
+					<h4>Vacation Home Website</h4>
+
+				</article>
+
+				<article class="group wrapper">
+					<a href="">
+						<figure>
+							<img src="./img/ICSmodule-l.jpg" alt="Interactive Learning Site">
+						</figure>
+					</a>
+					<h4>Interactive Learning Site</h4>
+				</article>
+
+				<article class="group wrapper">
+					<a href="">
+						<figure>
+							<img src="./img/SBCtumbler-l.jpg" alt="Illustration">
+						</figure>
+					</a>
+					<h4>Illustration</h4>
+				</article>
+
+				<article class="group wrapper">
+					<a href="">
+						<figure>
+							<img src="./img/SeaCadets-l.jpg" alt="Sea Cadets website">
+						</figure>
+					</a>
+					<h4>Sea Cadets website</h4>
+				</article>
+
+				<article class="group wrapper">
+					<a href="">
+						<figure>
+							<img src="./img/Gbhouse-l.jpg" alt="Gingerbread B&B website">
+						</figure>
+					</a>
+					<h4>Gingerbread B&B website</h4>
+				</article>
+
+				<article class="group wrapper">
+					<a href="">
+						<figure>
+							<img src="./img/SBCtumbler-l.jpg" alt="Illustration">
+						</figure>
+					</a>
+				<h4>Illustration</h4>
+				</article>
+
+				<footer class="wrapper">
+					<p>For code examples, checkout my github account.</p>
+				</footer>
+				<hr class="divider">
+			</section>
+
+			<section id="resume" class="group">
+
+				<header class="wrapper">
+					<h3>Resume</h3>
+					<p>Current/previous positions and skill set</p>
+				</header>
+
+				<article class="wrapper">
+					<div class="box">
+						<h4>Currently</h4>
+						<h5>Frontend Development Student</h5>
+						<h6>this.dev school Seattle</h6>
+						<p class="description">10-week, full-time web development course. 
+						</p>
+					</div>
+				</article>
+
+				<article class="wrapper">
+					<div class="box">
+							<h4>Previously</h4>
+							<span class="spaceafter"><h5>Javascript Student</h5> 
+							<h6>CodeFellows Seattle</h6></span>
+							<span class="spaceafter"><h5>Multimedia Designer</h5> 
+							<h6>eCom Scotland</h6> </span>
+							<span class="spaceafter"><h5>Design Manager</h5> 
+							<h6>BusyB.uk</h6> </span>
+							<h5>Senior Designer</h5>
+							<h6>HL2, Seattle</h6>
+					</div>
+				</article>
+
+				<article class="wrapper">
+					<div class="box">
+						<h4>Skills</h4>
+						<ul>
+							<li>Photoshop, Illustrator</li>
+							<li>HTML5 &amp; CSS3</li>
+							<li>Responsive Web Design</li>
+							<li>Javascript, Jquery</li>
+							<li>			lots more here		</li>
+						</ul>
+					</div>
+				</article>
+
+				<footer class="wrapper">
+					<p>For a full work history, take a look at my LinkedIn Profile.</p>
+					<br>
+				</footer>
+				</section>
+
+			</article>		
+
+		<div id="container-footer">
+
+			<form id="contact">
+				<fieldset class="wrapper">
+					<legend>Contact</legend>
+					<ul class="group">
+						<li class="name">
+							<label for="name">Your Name</label>
+							<input type="text" id="name" name="name" />
+						</li>
+						<li class="email">
+							<label for="email">Your Email</label>
+							<input type="email" id="email" name="email" />
+						</li>
+						<li class="message">
+							<label for="message">Say Hello</label>
+							<textarea id="message" name="message"></textarea>
+						</li>
+					</ul>
+					<input class="send" type="submit" name="submit" value="Send" />
+				</fieldset>
+			</form>
+
+			<div class='contain-techbaby'>
+			  <div class='ear'></div>
+			  <div class='ear ear-2'></div>
+			  <div class='face'></div>
+			  <div class='curl'></div>
+			  <div class='eye'>
+			    <div class='pupil'></div>
+			  </div>
+			  <div class='eye eye-2'>
+			    <div class='pupil'></div>
+			  </div>
+			  <div class='wrist'></div>
+			  <div class='wrist wrist-2'></div>
+			  <div class='laptop'>
+			    <div class='fruit'></div>
+			    <div class='fruitleaf'></div>
+			  </div>
+			  <div class='foot'>
+			    <div class='sole'>
+			      <div class='toe'></div>
+			      <div class='toe toe-2'></div>
+			      <div class='toe toe-3'></div>
+			      <div class='toe toe-4'></div>
+			    </div>
+			  </div>
+			  <div class='foot-2'>
+			    <div class='sole'>
+			      <div class='toe'></div>
+			      <div class='toe toe-2'></div>
+			      <div class='toe toe-3'></div>
+			      <div class='toe toe-4'></div>
+			    </div>
+			  </div>
+			</div>
+  <br>
+		<footer id="colophon" class="wrapper">
+			<p><a class="icuthyemail" href="mailto:ingrid@icuthy.com">ingrid@icuthy.com</a></p>
+			<p><small>&copy;<script>document.write(new Date().getFullYear())</script>, icuthy.com
+			</small>
+			</p>
+		</footer>
+			</div>	
+
+	</div>
+	</div>
+</body>
+</html>
