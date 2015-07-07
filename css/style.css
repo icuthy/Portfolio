@@ -171,7 +171,7 @@ body {
 	border: .65em solid #777777;
 
 	/* Part of Advanced Checkbox Hack for navigation
-  http://timpietrusky.com/advanced-checkbox-hack 
+  http://timpietrusky.com/advanced-checkbox-hack
   Fix Android */
 
 	-webkit-animation: bugfix infinite 1s;
@@ -179,7 +179,6 @@ body {
 		from {padding: 0;}
 		to {padding: 0;}
 	}
-
 }
 
 .pagewrapper {
@@ -196,6 +195,22 @@ p {
   font-size: 1em; /* 17px / 16 = 1.063em */
   line-height: 1.223; /* 1.3 / 1.063 = 1.223 */
   margin: .612em 0;
+}
+
+p.reference {
+	font-size: 1em;
+	line-height: 1.223;
+/* 	font-size: .85em;
+  line-height: 1.53; */
+  margin: .612em 0;
+}
+
+p.reference a {
+	color: #7E814A;
+	text-decoration: none;
+}
+p.reference a:hover {
+	color: #666666;
 }
 
 h2,h3,h4,h5,h6 {
@@ -236,7 +251,6 @@ header h3, legend {
 h4 {
 	font-size: 1em;
 	line-height: 1.56;
-	text-transform: uppercase;
 }
 
 h3,h4 {
@@ -305,14 +319,13 @@ footer.wrapper {
     display:block;
     top:30px;
     margin:0 auto;
-    background-color:#999;
+    background-color:rgb(153,153,153);
     border-radius:50%;
     -webkit-animation-name:scale;
     animation-name:scale;
-    -webkit-filter: blur(1px);
-    -moz-filter: blur(1px);
-    -ms-filter: blur(1px);
-    filter: blur(1px);
+    -webkit-box-shadow: 0px 0px 1px 1px rgba(153,153,153,0.7);
+    -moz-box-shadow: 0px 0px 1px 1px rgba(153,153,153,0.7);
+    box-shadow: 0px 0px 1px 1px rgba(153,153,153,0.7);
     opacity: .5;
 }
 
@@ -496,7 +509,7 @@ footer.wrapper {
 #bottomnav ul {
   float:right;
   list-style: none;
-  
+
 }
 #bottomnav li {
   margin: 0;
@@ -529,10 +542,30 @@ footer.wrapper {
 
 #portfolio h4 {
 	line-height: 1.82;
+  padding-left: 5px;
+}
+
+#portfolio figure,.box {
+  background: #fff;
+  -moz-box-shadow: 0 0 .325em .13em rgba( 0, 0, 0, .1 );
+  -webkit-box-shadow: 0 0 .325em .13em rgba( 0, 0, 0, .1 );
+  box-shadow: 0 0 .325em .13em rgba( 0, 0, 0, .1 );
+  padding: .975em; /* 3/4 of 1.3 */
+}
+
+#portfolio figure {
+  padding: 0;
+}
+
+#portfolio figure:hover {
+  -moz-box-shadow: 0 0 .65em .325em rgba( 0, 0, 0, .1 );
+  -webkit-box-shadow: 0 0 .65em .325em rgba( 0, 0, 0, .1 );
+  box-shadow: 0 0 .65em .325em rgba( 0, 0, 0, .1 );
 }
 
 .box {
 	padding:14px;
+	min-height: 250px;
 }
 
 .box h4 {
@@ -547,26 +580,8 @@ footer.wrapper {
 	padding: 0;
 }
 
-#portfolio figure,.box {
-	background: #fff;
-	-moz-box-shadow: 0 0 .325em .13em rgba( 0, 0, 0, .1 );
-	-webkit-box-shadow: 0 0 .325em .13em rgba( 0, 0, 0, .1 );
-	box-shadow: 0 0 .325em .13em rgba( 0, 0, 0, .1 );
-	padding: .975em; /* 3/4 of 1.3 */
-}
-
-#portfolio figure {
-  padding: 0;
-}
-
-#portfolio figure:hover {
-	-moz-box-shadow: 0 0 .65em .325em rgba( 0, 0, 0, .1 );
-	-webkit-box-shadow: 0 0 .65em .325em rgba( 0, 0, 0, .1 );
-	box-shadow: 0 0 .65em .325em rgba( 0, 0, 0, .1 );
-}
-
-.box {
-  min-height: 237px;
+#resume h4 {
+  text-transform: uppercase;
 }
 
 section footer {
@@ -604,7 +619,7 @@ img {
 
 .copyright {
   color: #555555;
-  margin-top: -0.325;
+  margin-top: -0.325em;
 }
 
 .linkedin, .github {
@@ -619,8 +634,8 @@ img {
 .linkedin:hover, .github:hover {
  color: #333333;
  border-bottom: none;
- font-style: bold;
-} 
+ font-weight: bold;
+}
 
 #topnav,
 #masthead,
@@ -633,19 +648,15 @@ img {
   padding-top:2.6em;
 }
 
-#contact p {
- padding-left: .65em;
-}
-
 
 #weeintrotype {
   text-align: center;
   margin-top: 0;
   margin-bottom: .975em;
+	line-height: 1.5;
 }
 
-.spaceafter {
-  display: block;
+#previous h6 {
   margin-bottom: 0.325em;
 }
 
@@ -670,10 +681,6 @@ img {
 	-ms-interpolation-mode: bicubic;
 }
 
-figcaption {
-  padding-left: 5px;
-}
-
 /*
 interpolation-mode
 http://css-tricks.com/ie-fix-bicubic-scaling-for-images/
@@ -694,12 +701,12 @@ Typer Animation
 .face {
   position: absolute;
   z-index: 3;
-  background: #D79957;
   border-radius: 50%;
   width: 90px;
   height: 100px;
-  background: -webkit-radial-gradient (#dca66c 40%, #d79957);
-  background: radial-gradient(#dca66c 40%, #d79957);
+  background: #dca66c;
+  background-image: -webkit-radial-gradient (#dca66c, #dca66c);
+  background-image: radial-gradient(#dca66c, #dca66c);
 }
 
 .hair {
@@ -742,7 +749,7 @@ Typer Animation
   left: -7.5px;
   width: 17.5px;
   height: 25px;
-  background-image: -webkit-radial-gradient(#d28e42, #d79957);
+  background-image: -webkit-radial-gradient(#d28e42, #dca66c);
   background-image: radial-gradient(#d28e42, #dca66c);
 }
 
@@ -754,14 +761,12 @@ Typer Animation
 .wrist {
   position: absolute;
   z-index: 5;
-  background: #D79957;
+  background: #d28e42;
   border-radius: 50%;
   top: 80px;
   left: -15px;
   width: 25px;
   height: 20px;
-  background-image: -webkit-linear-gradient(#C1894E, #D79957);
-  background-image: linear-gradient(#C1894E, #D79957);
   -webkit-transform: rotate(-10deg);
       -ms-transform: rotate(-10deg);
           transform: rotate(-10deg);
@@ -899,19 +904,30 @@ Typer Animation
   }
 }
 
+
 /* ******************************************
-Media Queries for screen less than 45em (720px)
+Media Queries for screen less than 26.25em (420px)
 ****************************************** */
-@media screen and (max-width: 45em) {
-	#container-header {
-
-		padding: 10% 0;
+@media screen and (max-width: 26.25em) {
+	#contact p {
+	 width: 150px;
 	}
 
-	#portfolio figure {
-		max-width: 25em;
-	}
 }
+
+
+/* ******************************************
+			Media Queries for screen less than 45em (720px)
+****************************************** */
+	@media screen and (max-width: 45em) {
+		#container-header {
+			padding: 10% 0;
+		}
+
+		#portfolio figure {
+			max-width: 25em;
+	}
+		}
 
 
 /* ******************************************
