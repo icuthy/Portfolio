@@ -274,8 +274,7 @@ h6 {
 	color: #a6a6a6;
 	font-weight: 200;
 }
-/* https://css-tricks.com/examples/hrs/
- */
+/* https://css-tricks.com/examples/hrs/ */
 
 hr.divider {
     border: 0;
@@ -458,6 +457,7 @@ footer.wrapper {
 	color: #666;
 	text-decoration: none;
 	padding: .975em 1.3em;
+  position: relative;
   text-align: center;
   text-transform: uppercase;
 }
@@ -468,15 +468,18 @@ footer.wrapper {
 }
 
 #topnav nav {
-	height: 0;
+  max-height: 0;
 	overflow: hidden;
+  opacity: 0.5;
+  transition: all 1.5s ease;
 }
 
 /* Hide checkbox */
 #topnav input[type=checkbox] {
 	position: absolute;
-	top: -999em;
-	left: -999em;
+	top: 21px;
+	right: 40px;
+  opacity: 0;
 }
 
 
@@ -493,8 +496,9 @@ footer.wrapper {
 }
 
 #topnav input[type=checkbox]:checked ~ nav {
-	height: auto;
+  max-height: 200px;
 	overflow: hidden;
+  opacity: 1;
 }
 
 /*  bottom navigation */
@@ -967,6 +971,7 @@ Media Queries for screen wider than 45em (720px)
   margin: 0 0 0 3.3%;
   padding: 0;
   }
+
 	#container-header {
 		padding:3% 0 5% 0;
 	}
@@ -986,6 +991,11 @@ Media Queries for screen wider than 45em (720px)
 	#topnav nav {
 		height: auto;
 	}
+  #topnav nav {
+    max-height: 70px;
+    overflow: hidden;
+    opacity: 1;
+  }
 
 	#topnav ul {
     float: right;
@@ -1054,17 +1064,6 @@ Media Queries for screen wider than 60em (960px)
 		margin-left: 50%;
 	}
 
-	/* Form Fixes, IE7 and below */
-
-	.ie .message textarea {
-		*width: 49.9%;
-	}
-
-	.ie .send {
-		*margin-left: 46.7%;
-	}
-}
-
 
 /* ******************************************
 Print Styles
@@ -1132,27 +1131,4 @@ Print Styles
 #topnav input[type=checkbox].checked ~ nav {
 	height: auto;
 	overflow: visible;
-}
-
-/* Always show nav, IE7 and below */
-
-.ie #topnav nav {
-	*height: auto;
-	*overflow: visible;
-}
-
-/* Hide navicon, IE7 and below */
-
-.ie #topnav label {
-	*background: none;
-}
-
-/* box-sizing polyfill, IE7 and below */
-
-.ie .wrapper,
-.ie .name,
-.ie .email,
-.ie input,
-.ie textarea {
-	*behavior: url("./js/boxsizing.htc");
 }

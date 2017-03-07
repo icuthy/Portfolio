@@ -2,263 +2,266 @@
 <!--[if lt IE 9]><html class="ie"><![endif]-->
 <!--[if !IE]><html><![endif]-->
 <html>
+
 <head>
-	<meta charset="UTF-8">
-	<title>Cuthy Portfolio</title>
-
-	<!-- Viewport meta tag to prevent iPhone from scaling page -->
-	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-
-	<link rel="stylesheet" href="./css/style.css"/>
-
-<!--[if lt IE 9]>
+    <meta charset="UTF-8">
+    <title>Cuthy Portfolio</title>
+    <!-- Viewport meta tag to prevent iPhone from scaling page -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!--[if lt IE 9]>
 <script src="./js/html5.js"></script>
 <![endif]-->
-
-<!--[if lt IE 9]>
+    <!--[if lt IE 9]>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
 <![endif]-->
-
-<!--[if IE 8]>
+    <!--[if IE 8]>
 <script src="./js/checkbox.js"></script>
 <![endif]-->
-
-
 </head>
+
 <body lang="en">
-	<div class="pagewrapper" id="top">
+    <div class="pagewrapper" id="top">
+        <div id="container-nav">
+            <section id="topnav" class="group wrapper">
+                <h3>ingrid cuthbert</h3>
+                <!-- Checkbox Hack markup -->
+                <input type="checkbox" id="toggle" />
+                <label for="toggle" onclick>Menu</label>
+                <!-- /Checkbox Hack markup -->
+                <nav>
+                    <ul>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#resume">Resume</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+        <!-- end container-nav -->
+        <div id="container-header">
+            <header id="masthead" class="wrapper">
+                <div class='logowrap'>
+                    <a href="#" id='logo' class="logo" title="logo">
+                        <img src="./img/logo.svg" alt="logo">
+                        <div class="shadow"></div>
+                    </a>
+                </div>
+                <h1>Hello, I am, like, amazing</h1>
+                <p id="weeintrotype"><small>in my passion for all things webby.</small></p>
+                <h2>My name is Ingrid, a Seattle-based frontend developer.</h2>
+            </header>
+        </div>
+        <!-- end header -->
+        <div id="content">
+            <hr class="divider">
+            <section id="portfolio" class="group">
+                <header class="wrapper">
+                    <h3>Portfolio</h3>
+                </header>
+                <article class="group wrapper">
+                    <a href="http://cuthycreative.com/" target="_blank">
+                        <figure>
+                            <img src="./img/cuthycreative.jpg" alt="Personal Design Website">
+                        </figure>
+                    </a>
+                    <h4>Personal Design Website</h4>
+                </article>
+                <article class="group wrapper">
+                    <a href="http://www.cuthycreative.com/hirecuthy/" target="_blank">
+                        <figure>
+                            <img src="./img/animation.jpg" alt="Animation, Illustration &amp; Video">
+                        </figure>
+                    </a>
+                    <h4>Animation, Illustration &amp; Video</h4>
+                </article>
+                <article class="group wrapper">
+                    <a href="http://thedailytarot.com/" target="_blank">
+                        <figure>
+                            <img src="./img/dailytarot.png" alt="the Daily Tarot">
+                        </figure>
+                    </a>
+                    <h4>Javascript and jQuery website</h4>
+                </article>
+                <article class="group wrapper">
+                    <a href="http://www.gingerbreadhousemontana.com/" target="_blank">
+                        <figure>
+                            <img src="./img/gbhouse.jpg" alt="Gingerbread B&amp;B Website">
+                        </figure>
+                    </a>
+                    <h4>Gingerbread B&amp;B WordPress Site</h4>
+                </article>
+                <article class="group wrapper">
+                    <a href="http://icuthy.com/mijas/" target="_blank">
+                        <figure>
+                            <img src="./img/mijas.jpg" alt="Vacation Home Website">
+                        </figure>
+                    </a>
+                    <h4>Vacation Home Website</h4>
+                </article>
+                <article class="group wrapper">
+                    <a href="http://icuthy.com/psychichamster/" target="_blank">
+                        <figure>
+                            <img src="./img/psychicham.jpg" alt="Psychic Hamster">
+                        </figure>
+                    </a>
+                    <h4>Psychic Hamster App</h4>
+                </article>
+                <article class="group wrapper">
+                    <a href="http://icuthy.com/zippy/" target="_blank">
+                        <figure>
+                            <img src="./img/zippy.jpg" alt="Zippy Postal Code Finder">
+                        </figure>
+                    </a>
+                    <h4>Zippy, Postal Code Finder</h4>
+                </article>
+                <article class="group wrapper">
+                    <a href="http://codepen.io/icuthy/" target="_blank">
+                        <figure>
+                            <img src="./img/impatientpnut.jpg" alt="CSS animation">
+                        </figure>
+                    </a>
+                    <h4>SVG, Canvas, CSS Animation</h4>
+                </article>
+                <footer class="wrapper">
+                    <p>For more code examples, checkout my<a href="https://github.com/icuthy" class="github" target="blank">Github account</a></p>
+                </footer>
+                <hr class="divider">
+            </section>
+            <section id="resume" class="group resume">
+                <header class="wrapper">
+                    <h3>Resume</h3>
+                    <p>Current/previous positions and skill set</p>
+                </header>
+                <article class="wrapper">
+                    <div class="box">
+                        <h4>Currently</h4>
+                        <h5>Junior Frontend Dev</h5>
+                        <h6>efelle creative Seattle</h6>
+                        <p class="description">
+                            Develop custom responsive websites for a variety of small to midsize companies integrating a PHP/MYSQL-based CMS.
+                        </p>
+                        <p class="reference">
+                            <br> efelle creative: <a href="http://www.seattlewebdesign.com/">seattlewebdesign.com</a>
+                        </p>
+                    </div>
+                </article>
+                <article class="wrapper">
+                    <div class="box" id="previous">
+                        <h4>Previously</h4>
+                        <h5>Frontend Dev Student</h5>
+                        <h6>this.dev and CodeFellows Seattle</h6>
+                        <h5>Multimedia Designer</h5>
+                        <h6>eCom Scotland</h6>
+                        <h5>Design Manager</h5>
+                        <h6>BusyB.uk</h6>
+                        <h5>Senior Designer</h5>
+                        <h6>HL2 Seattle</h6>
+                    </div>
+                </article>
+                <article class="wrapper">
+                    <div class="box">
+                        <h4>Skills</h4>
+                        <ul>
+                            <li>HTML, CSS &amp; SCSS</li>
+                            <li>Javascript, Jquery, Node.js</li>
+                            <li>WordPress, Bootstrap, SVN, Git</li>
+                            <li>Responsive Web Design</li>
+                            <li>Design, Illustration, Animation</li>
+                            <li>Photoshop, Illustrator</li>
+                        </ul>
+                    </div>
+                </article>
+                <footer class="wrapper">
+                    <p>For a full history, take a look at my<a href="http://www.linkedin.com/in/ingridcuthbert" class="linkedin" target="blank">LinkedIn profile</a></p>
+                    <br>
+                    <br>
+                    <nav id="bottomnav">
+                        <ul>
+                            <li><a href="#top">Top</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <!-- <li><a href="#resume">Resume</a></li> -->
+                        </ul>
+                    </nav>
+                </footer>
+            </section>
+        </div>
+        <!-- end content -->
+        <footer id="container-footer">
+            <div id="contact" class="group">
+                <p>Email me: <a class="icuthyemail" href="mailto:icuthy@gmail.com">icuthy@gmail.com</a></p>
+                <p class="copyright"><small>&copy; Ingrid Cuthbert 2015</small></p>
+            </div>
+            <div class='contain-typer'>
+                <div class='ear'></div>
+                <div class='ear ear-2'></div>
+                <div class='face'></div>
+                <div class='hair'></div>
+                <div class='bangs'></div>
+                <div class='curl'></div>
+                <div class='eye'>
+                    <div class='pupil'></div>
+                </div>
+                <div class='eye eye-2'>
+                    <div class='pupil'></div>
+                </div>
+                <div class='wrist'></div>
+                <div class='wrist wrist-2'></div>
+                <div class='laptop'>
+                    <div class='fruit'></div>
+                    <div class='fruitleaf'></div>
+                </div>
+            </div>
+        </footer>
+        <!-- end container-footer -->
+    </div>
+    <!-- end of pagewrapper -->
+    <!-- Normalize hide address bar for iOS and Android -->
+    <script src="./js/hideaddressbar.js" async></script>
+    <!-- Add media query support for IE8 and under. Must place media queries in external stylesheet -->
+    <script src="./js/respond.min.js" async></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
 
-		<div id="container-nav">
-			<section id="topnav" class="group wrapper">
-				<h3>ingrid cuthbert</h3>
-				<!-- Checkbox Hack markup -->
-				<input type="checkbox" id="toggle" />
-				<label for="toggle" onclick>Menu</label>
-				<!-- /Checkbox Hack markup -->
-				<nav>
-					<ul>
-						<li><a href="#portfolio">Portfolio</a></li>
-						<li><a href="#resume">Resume</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
-				</nav>
-			</section>
-		</div><!-- end container-nav -->
+    $(document).ready(function() {
 
-		<div id="container-header">
-			<header id="masthead" class="wrapper">
-				<div class='logowrap'>
-					<a href="#" id='logo' class="logo" title="logo">
-						<img src="./img/logo.svg" alt="logo">
-						<div class="shadow"></div>
-					</a>
-			  </div>
-				<h1>Hello, I am, like, amazing</h1>
-				<p id="weeintrotype"><small>in my passion for all things webby.</small></p>
-				<h2>My name is Ingrid, a Seattle-based web designer and junior frontend developer.</h2>
-			</header>
-		</div><!-- end header -->
+    	function smoothScroll() {
+	        $('a[href^="#"]').on('click', function(e) {
+	            e.preventDefault();
 
-		<div id="content">
+	            var target = this.hash;
+	            var $target = $(target);
 
-			<hr class="divider">
+	            $('html, body').stop().animate({
+	                'scrollTop': $target.offset().top
+	            }, 900, 'swing', function() {
+	                window.location.hash = target;
+	            });
+	        });
+    	}
+    	smoothScroll();
 
-			<section id="portfolio" class="group">
 
-				<header class="wrapper">
-					<h3>Portfolio</h3>
-				</header>
-
-				<article class="group wrapper">
-					<a href="http://cuthycreative.com/" target="_blank">
-						<figure>
-							<img src="./img/cuthycreative.jpg" alt="Personal Design Website">
-						</figure>
-						</a>
-					<h4>Personal Design Website</h4>
-					</article>
-
-					<article class="group wrapper">
-						<a href="http://www.cuthycreative.com/hirecuthy/" target="_blank">
-							<figure>
-								<img src="./img/animation.jpg" alt="Animation, Illustration &amp; Video">
-							</figure>
-						</a>
-						<h4>Animation, Illustration &amp; Video</h4>
-					</article>
-
-				  <article class="group wrapper">
-          <a href="http://thedailytarot.com/" target="_blank">
-            <figure>
-              <img src="./img/dailytarot.png" alt="the Daily Tarot">
-            </figure>
-          </a>
-          <h4>Javascript and jQuery website</h4>
-        </article>
-
-        <article class="group wrapper">
-					<a href="http://www.gingerbreadhousemontana.com/" target="_blank">
-						<figure>
-							<img src="./img/gbhouse.jpg" alt="Gingerbread B&amp;B Website">
-						</figure>
-					</a>
-					<h4>Gingerbread B&amp;B WordPress Site</h4>
-				</article>
-
-				<article class="group wrapper">
-					<a href="http://icuthy.com/mijas/" target="_blank">
-						<figure>
-							<img src="./img/mijas.jpg" alt="Vacation Home Website">
-						</figure>
-					</a>
-					<h4>Vacation Home Website</h4>
-
-				</article>
-
-        <article class="group wrapper">
-          <a href="http://icuthy.com/psychichamster/" target="_blank">
-            <figure>
-              <img src="./img/psychicham.jpg" alt="Psychic Hamster">
-            </figure>
-          </a>
-          <h4>Psychic Hamster App</h4>
-        </article>
-
-        <article class="group wrapper">
-          <a href="http://icuthy.com/zippy/" target="_blank">
-            <figure>
-              <img src="./img/zippy.jpg" alt="Zippy Postal Code Finder">
-            </figure>
-          </a>
-          <h4>Zippy, Postal Code Finder</h4>
-        </article>
-
-				<article class="group wrapper">
-					<a href="http://codepen.io/icuthy/" target="_blank">
-						<figure>
-							<img src="./img/impatientpnut.jpg" alt="CSS animation">
-						</figure>
-					</a>
-					<h4>SVG, Canvas, CSS Animation</h4>
-				</article>
-
-				<footer class="wrapper">
-					<p>For more code examples, checkout my<a href="https://github.com/icuthy"  class="github" target="blank">Github account</a></p>
-				</footer>
-				<hr class="divider">
-			</section>
-
-			<section id="resume" class="group">
-
-				<header class="wrapper">
-					<h3>Resume</h3>
-					<p>Current/previous positions and skill set</p>
-				</header>
-
-				<article class="wrapper">
-					<div class="box">
-						<h4>Currently</h4>
-						<h5>Frontend Dev Student</h5>
-						<h6>this.dev school Seattle</h6>
-						<p class="description">
-							A full-time, 3-month bootcamp focusing on JavaScript, AngularJS, and Node.js.
-						</p>
-						<p class="reference"><b>Reference:</b><br> Mel Quark, instructor: <a href="mailto:mel.quark@gmail.com">mel.quark@gmail.com</a>
-						</p>
-					</div>
-				</article>
-
-				<article class="wrapper">
-					<div class="box" id="previous">
-						<h4>Previously</h4>
-						<h5>Javascript Student</h5>
-							<h6>CodeFellows Seattle</h6>
-						<h5>Multimedia Designer</h5>
-							<h6>eCom Scotland</h6>
-						<h5>Design Manager</h5>
-							<h6>BusyB.uk</h6> 
-						<h5>Senior Designer</h5>
-							<h6>HL2 Seattle</h6>
-					</div>
-				</article>
-
-				<article class="wrapper">
-					<div class="box">
-						<h4>Skills</h4>
-						<ul>
-							<li>Photoshop, Illustrator</li>
-							<li>HTML5 &amp; CSS3</li>
-							<li>Responsive Web Design</li>
-							<li>Javascript, Lodash, Jquery</li>
-							<li>Illustration, Animation</li>
-							<li>WordPress, Bootstrap, SVN, Git</li>
-						</ul>
-					</div>
-				</article>
-
-				<footer class="wrapper">
-					<p>For a full history, take a look at my<a href="http://www.linkedin.com/in/ingridcuthbert" class="linkedin" target="blank">LinkedIn profile</a></p>
-					<br><br>
-
-					<nav id="bottomnav">
-						<ul>
-							<li><a href="#top">Top</a></li>
-							<li><a href="#portfolio">Portfolio</a></li>
-							<!-- <li><a href="#resume">Resume</a></li> -->
-						</ul>
-					</nav>
-				</footer>
-			</section>
-		</div> <!-- end content -->
-
-		<footer id="container-footer">
-			<div id="contact" class="group">
-					<p>Email me: <a class="icuthyemail" href="mailto:icuthy@gmail.com">icuthy@gmail.com</a></p>
-					<p class="copyright"><small>&copy; Ingrid Cuthbert 2015</small></p>
-			</div>
-				<div class='contain-typer'>
-				  <div class='ear'></div>
-				  <div class='ear ear-2'></div>
-				  <div class='face'></div>
-				  <div class='hair'></div>
-				  <div class='bangs'></div>
-				  <div class='curl'></div>
-				  <div class='eye'>
-				    <div class='pupil'></div>
-				  </div>
-				  <div class='eye eye-2'>
-				    <div class='pupil'></div>
-				  </div>
-				  <div class='wrist'></div>
-				  <div class='wrist wrist-2'></div>
-				  <div class='laptop'>
-				    <div class='fruit'></div>
-				    <div class='fruitleaf'></div>
-				</div>
-			</div>
-		</footer>	<!-- end container-footer -->
-	</div> <!-- end of pagewrapper -->
-		<!-- Normalize hide address bar for iOS and Android -->
-	<script src="./js/hideaddressbar.js" async></script>
-
-	<!-- Add media query support for IE8 and under. Must place media queries in external stylesheet -->
-	<script src="./js/respond.min.js" async></script>
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" async></script>
-   <script>
-		$(document).ready(function(){
-		$('a[href^="#"]').on('click',function (e) {
-		      e.preventDefault();
-
-		      var target = this.hash;
-		      var $target = $(target);
-
-		      $('html, body').stop().animate({
-		          'scrollTop': $target.offset().top
-		      }, 900, 'swing', function () {
-		          window.location.hash = target;
-		      });
-		  });
-		});
-</script>
+     	function equalDivs(container, column) {
+	     	// Select and loop the container element of the elements you want to equalise
+		    $(container).each(function(){ 
+			    var highestBox = 0; // Cache the highest
+			      
+			    // Select and loop the elements you want to equalise
+			    $(column, this).each(function(){
+				    // If this box is higher than the cached highest then store it
+				    if($(this).height() > highestBox) {
+				    	highestBox = $(this).height(); 
+				    }
+				});  
+			            
+				// Set the height of all those children to whichever was highest 
+				$(column,this).height(highestBox);
+			});
+     	}
+	    // equalDivs('.resume','.box');
+	             
+    });
+    </script>
 </body>
 </html>
