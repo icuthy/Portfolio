@@ -604,6 +604,7 @@ footer.wrapper p {
 
 #portfolio figure {
     padding: 0;
+    position: relative;
 }
 
 #portfolio figure:hover {
@@ -649,7 +650,6 @@ section footer {
 #container-footer {
     height: 165px;
     background-color: #888888;
-    min-resolution: 140px;
 }
 
 img {
@@ -710,6 +710,84 @@ img {
 
 #previous h6 {
     margin-bottom: 0.325em;
+}
+
+/*******************************************
+Spider Business
+*******************************************/
+
+.spiderfigure {
+    position: relative;
+    height: 100%;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.spiderfigure::before {
+    content: ' ';
+    display: block;
+    background-image: url(../img/cobweb.png);
+    background-position: 0;
+    background-repeat: no-repeat;
+    -ms-background-size: contain;
+    -o-background-size: contain;
+    -moz-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-size: contain;
+    opacity: 65%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transition: opacity .2s linear;
+    width: 100%;
+    z-index: 30;
+} 
+
+.spiderfigure:hover::before {
+    background-image: url(../img/cobweb.png);
+    opacity: 0%;
+}
+
+.spider{
+	position: absolute;
+	background-image: url(../img/spidey.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+    width: 60px;
+    height: 60px;
+    /* transition: all .25s ease; */
+    bottom: 0;
+    right: 0;
+    margin-right: -20px;
+    user-select: none;
+    opacity: 0;
+	pointer-events: none;
+	z-index: 10000;
+    overflow: hidden;
+}
+.spiderfigure:hover .spider {
+	position: absolute;
+	background-image: url(../img/spidey.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+    width: 60px;
+    height: 60px;
+    transition: all .25s ease;
+    bottom: 63%;
+    right: 50%;
+    margin-right: -20px;
+    user-select: none;
+    opacity: .9;
+	pointer-events: none;
+	z-index: 10000;
+    overflow: hidden;
 }
 
 /* Error Pages */
@@ -995,11 +1073,14 @@ Media Queries for screen less than 45em (720px)
         padding: 10% 0;
     }
     #portfolio figure {
+        margin: 0 auto;
         max-width: 25em;
+        text-align: center;
     }
     footer.wrapper p.efelle {
         display: none;
     }
+    h4 { text-align: center; }
     h4 span {
         display: none;
     }
@@ -1117,53 +1198,57 @@ Media Queries for screen wider than 60em (960px)
         width: 25%;
         margin-left: 50%;
     }
+
+}
 /*******************************************
 Print Styles
 *******************************************/
-    @media print and (max-width: 8.5in) {
-        #masthead {
-            color: black;
-        }
-        #container-header {
-            height: auto;
-        }
-        img {
-            width: 2in;
-        }
-        #portfolio {
-            float: left;
-            width: 45%;
-        }
-        #resume {
-            float: right;
-            width: 45%;
-        }
-        #container-footer {
-            clear: both;
-        }
+@media print and (max-width: 8.5in) {
+    #masthead {
+        color: black;
     }
-    /* Float Clearing http://nicolasgallagher.com/micro-clearfix-hack */
-    .group:after {
-        content: " ";
-        display: table;
+    #container-header {
+        height: auto;
+    }
+    img {
+        width: 2in;
+    }
+    #portfolio {
+        float: left;
+        width: 45%;
+    }
+    #resume {
+        float: right;
+        width: 45%;
+    }
+    #container-footer {
         clear: both;
     }
-    /* Clearfix */
-    .group {
-        *zoom: 1;
-    }
-    /* Figures/Images */
-    .ie #portfolio figure {
-        width: 100%;
-        box-sizing: border-box;
-    }
-    /* "*" hack applies only to IE7 and below */
-    .ie #portfolio figure {
-        *width: auto;
-    }
-    /* Navigation */
-    /* IE8 .checked class for checkbox.js */
-    #topnav input[type=checkbox].checked~nav {
-        height: auto;
-        overflow: visible;
-    }
+}
+
+/* Float Clearing http://nicolasgallagher.com/micro-clearfix-hack */
+.group:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+/* Clearfix */
+.group {
+    *zoom: 1;
+}
+/* Figures/Images */
+.ie #portfolio figure {
+    width: 100%;
+    box-sizing: border-box;
+}
+/* "*" hack applies only to IE7 and below */
+.ie #portfolio figure {
+    *width: auto;
+}
+/* Navigation */
+/* IE8 .checked class for checkbox.js */
+#topnav input[type=checkbox].checked~nav {
+    height: auto;
+    overflow: visible;
+}
+

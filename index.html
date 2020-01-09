@@ -133,8 +133,10 @@
                 </article>
                 <article class="group wrapper">
                     <a href="https://ingdidit.com/creative" target="_blank">
-                        <figure>
+                        <figure class="spiderfigure">
                             <img src="./img/cuthycreative.jpg" alt="Personal Design Website">
+                            <div class="spider">
+                            </div>
                         </figure>
                     </a>
                     <h4>Historic Personal Design Website</h4>
@@ -245,7 +247,7 @@
         <footer id="container-footer">
             <div id="contact" class="group">
                 <p>Email me: <a class="icuthyemail" href="mailto:icuthy@gmail.com">icuthy@gmail.com</a></p>
-                <p class="copyright"><small>&copy; Ingrid Cuthbert 2019</small></p>
+                <p class="copyright"><small>&copy; Ingrid Cuthbert 2020</small></p>
             </div>
             <div class='contain-typer'>
                 <div class='ear'></div>
@@ -271,52 +273,12 @@
         <!-- end container-footer -->
     </div>
     <!-- end of pagewrapper -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Normalize hide address bar for iOS and Android -->
     <script src="./js/hideaddressbar.js" async></script>
     <!-- Add media query support for IE8 and under. Must place media queries in external stylesheet -->
     <script src="./js/respond.min.js" async></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script>
-
-    $(document).ready(function() {
-
-    	function smoothScroll() {
-	        $('a[href^="#"]').on('click', function(e) {
-	            e.preventDefault();
-
-	            var target = this.hash;
-	            var $target = $(target);
-
-	            $('html, body').stop().animate({
-	                'scrollTop': $target.offset().top
-	            }, 900, 'swing', function() {
-	                window.location.hash = target;
-	            });
-	        });
-    	}
-    	smoothScroll();
-
-
-     	function equalDivs(container, column) {
-	     	// Select and loop the container element of the elements you want to equalise
-		    $(container).each(function(){ 
-			    var highestBox = 0; // Cache the highest
-			      
-			    // Select and loop the elements you want to equalise
-			    $(column, this).each(function(){
-				    // If this box is higher than the cached highest then store it
-				    if($(this).height() > highestBox) {
-				    	highestBox = $(this).height(); 
-				    }
-				});  
-			            
-				// Set the height of all those children to whichever was highest 
-				$(column,this).height(highestBox);
-			});
-     	}
-	    // equalDivs('.resume','.box');
-	             
-    });
-    </script>
+    <script src="./js/smoothscroll.js" async></script>
 </body>
 </html>
