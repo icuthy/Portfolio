@@ -171,6 +171,7 @@ body {
     /* Part of Advanced Checkbox Hack for navigation
     http://timpietrusky.com/advanced-checkbox-hack
     Fix Android */
+    animation: bugfix infinite 1s;
     -webkit-animation: bugfix infinite 1s;
     @-webkit-keyframes bugfix {
         from {
