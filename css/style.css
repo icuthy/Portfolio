@@ -213,7 +213,7 @@ p.reference {
 }
 
 p.reference a {
-    color: #7E814A;
+    color: #6b6e28;
     text-decoration: none;
 }
 
@@ -257,7 +257,7 @@ h3 {
 
 header h3,
 legend {
-    color: #C60;
+    color: #b94814;
     padding: .65em 0;
     text-transform: uppercase;
 }
@@ -290,7 +290,7 @@ h6 {
 }
 
 h6 {
-    color: #a6a6a6;
+    color: #706f6f;
     font-weight: 200;
 }
 
@@ -503,7 +503,7 @@ footer.wrapper p {
 
 #topnav a:hover {
     background: #f8f8f8;
-    color: #C60;
+    color: #b94814;
 }
 
 #topnav nav {
@@ -567,7 +567,7 @@ footer.wrapper p {
 #bottomnav a {
     display: inline-block;
     font-size: .975em;
-    color: #999999;
+    color: #666666;
     margin-left: .39em;
     border-bottom: 1px dotted #b3b3b3;
     text-decoration: none;
@@ -575,7 +575,7 @@ footer.wrapper p {
 }
 
 #bottomnav a:hover {
-    color: #c60;
+    color: #b94814;
     border-bottom: none;
 }
 
@@ -620,7 +620,7 @@ footer.wrapper p {
 }
 
 .box h4 {
-    color: #999;
+    color: #666666;
     border-bottom: 1px solid #eee;
     margin-bottom: .975em;
     /* 3/4 of 1.3 */
@@ -666,11 +666,11 @@ img {
 }
 
 .icuthyemail:hover {
-    color: #444444;
+    color: #012330;
 }
 
 .copyright {
-    color: #555555;
+    color: #111111;
     margin-top: -0.325em;
 }
 
@@ -678,7 +678,7 @@ img {
 .github {
     position: relative;
     left: 2px;
-    color: #7E814A;
+    color: #6b6e28;
     margin-left: .39em;
     border-bottom: 1px dotted #b3b3b3;
     text-decoration: none;
@@ -699,6 +699,7 @@ img {
 }
 
 #contact {
+    color:#111111;
     padding-top: 2.6em;
 }
 
@@ -1158,12 +1159,10 @@ Media Queries for screen wider than 45em (720px)
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
+        padding-left: .65em;
     }
     .name {
         padding-right: .65em;
-    }
-    .email {
-        padding-left: .65em;
     }
     .send {
         width: 48.6%;
